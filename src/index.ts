@@ -1,6 +1,8 @@
 import { html, Html } from "@elysiajs/html";
 import staticPlugin from "@elysiajs/static";
 import { Elysia, redirect } from "elysia";
+import { sessionPlugin } from "./sessions";
+import { MemoryStore } from "./sessions/memory"
 import nunjucks from "nunjucks";
 import { LoginController } from "./controllers";
 
@@ -12,25 +14,28 @@ nunjucks.configure('src/views',{
 
 const app = new Elysia()
   .use(html())
+  .use(sessionPlugin({
+      store: new MemoryStore(),
+      expireAfter: 15 * 60, // 15 minutes
+    }))
   .use(staticPlugin())
   .get("/", () => "Hello Elysia")
-  .get("/template", () => LoginController.index)
-  .get('/home', ({ cookie: { sessionToken } }) => {
-          // Get the value of a cookie
-          if (sessionToken.value) {
-              return `Welcome back! Token: ${sessionToken.value}`;
-          }
-          return 'No session token found.';
+  .get("/template", (context) => {
+      return LoginController.index(context)
+    })
+  .get('/home', (context) => {
+        console.log("sessionid", context.session.get("id"));
       })
-  .get('/login', ({ cookie: { sessionToken } }) => {
-         return LoginController.otentikasi(sessionToken)
+  .get('/login', (context) => {
+         return LoginController.otentikasi(context)
       })
-  .get("/logout", ({ cookie: { sessionToken } }) => {
-      return LoginController.logout(sessionToken)
+  .get("/logout", (context) => {
+      return LoginController.logout(context);
   })
   .group("/admin", (adminapp) =>
-    adminapp.onBeforeHandle(({ cookie: { sessionToken } }) => {
-        if (!sessionToken.value) {
+    adminapp.onBeforeHandle((context) => {
+        let id = context.session.get("id");
+        if (!id) {
           console.log("unauthrozed access, redirect to index");
           return redirect("/");
         }
