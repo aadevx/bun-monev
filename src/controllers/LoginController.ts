@@ -1,16 +1,24 @@
-import { Context, Cookie, redirect } from "elysia";
-import nunjucks from "nunjucks";
+import { redirect } from "elysia";
+import { Controller } from "./controller";
 
-class LoginController {
+class LoginController extends Controller {
 
   async index(context : any) {
-    return nunjucks.render('login.html', {flash : context.session.flash})
+    return this.render(context, "login.html");
   }
 
   async otentikasi(context : any) {
-    // TODO otentikasi in DB
-    context.session.set("id", "PPK10");
-    return redirect("/home")
+    if (process.env.ADMIN_USER == context.body.username && process.env.ADMIN_PASS == context.body.password) {
+        context.session.set("userid", context.body.username);
+        context.session.set("role", "ADMIN");
+        return redirect("/home")
+    } else if(process.env.USER_USERID == context.body.username && process.env.USER_PASS == context.body.password){
+      context.session.set("userid", context.body.username);
+      context.session.set("role", "USER");
+      return redirect("/home")
+    }
+    context.session.flash("error", "Invalid User ID or Password");
+    return redirect("/");
   }
 
   async logout(context : any) {

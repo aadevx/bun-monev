@@ -7,6 +7,8 @@ bun create elysia bun-monev
 bun add add nunjucks chokidar
 bun add -d @types/nunjucks
 bun add @elysiajs/static
+bun add drizzle-orm pg dotenv @types/pg
+bun add -d drizzle-kit tsx
 ```
 
 ## Development

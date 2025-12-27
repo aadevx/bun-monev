@@ -19,19 +19,16 @@ const app = new Elysia()
       expireAfter: 15 * 60, // 15 minutes
     }))
   .use(staticPlugin())
-  .get("/", () => "Hello Elysia")
-  .get("/template", (context) => {
-      return LoginController.index(context)
-    })
-  .get('/home', (context) => {
-        console.log("sessionid", context.session.get("id"));
-      })
-  .get('/login', (context) => {
+  .get("/", (context) => LoginController.index(context))
+  .post('/login', (context) => {
          return LoginController.otentikasi(context)
       })
   .get("/logout", (context) => {
       return LoginController.logout(context);
   })
+  .get('/home', (context) => {
+        console.log("sessionid", context.session.get("id"));
+      })
   .group("/admin", (adminapp) =>
     adminapp.onBeforeHandle((context) => {
         let id = context.session.get("id");

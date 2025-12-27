@@ -1,0 +1,5932 @@
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "prevId": "",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.paket_purchase": {
+      "name": "paket_purchase",
+      "schema": "",
+      "columns": {
+        "kd_paket": {
+          "name": "kd_paket",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "no_paket": {
+          "name": "no_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_paket": {
+          "name": "nama_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "satker_id": {
+          "name": "satker_id",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alamat_satker": {
+          "name": "alamat_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "npwp_satker": {
+          "name": "npwp_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_rup": {
+          "name": "kd_rup",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_sumber_dana": {
+          "name": "nama_sumber_dana",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kode_anggaran": {
+          "name": "kode_anggaran",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_komoditas": {
+          "name": "kd_komoditas",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_produk": {
+          "name": "kd_produk",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "kd_penyedia": {
+          "name": "kd_penyedia",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_penyedia_distributor": {
+          "name": "kd_penyedia_distributor",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jml_jenis_produk": {
+          "name": "jml_jenis_produk",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kuantitas": {
+          "name": "kuantitas",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "harga_satuan": {
+          "name": "harga_satuan",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ongkos_kirim": {
+          "name": "ongkos_kirim",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "total_harga": {
+          "name": "total_harga",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_user_pokja": {
+          "name": "kd_user_pokja",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_telp_user_pokja": {
+          "name": "no_telp_user_pokja",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "email_user_pokja": {
+          "name": "email_user_pokja",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_user_ppk": {
+          "name": "kd_user_ppk",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ppk_nip": {
+          "name": "ppk_nip",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jabatan_ppk": {
+          "name": "jabatan_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tanggal_buat_paket": {
+          "name": "tanggal_buat_paket",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tanggal_edit_paket": {
+          "name": "tanggal_edit_paket",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "deskripsi": {
+          "name": "deskripsi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_paket": {
+          "name": "status_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "paket_status_str": {
+          "name": "paket_status_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "catatan_produk": {
+          "name": "catatan_produk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_provinsi_wilayah_harga": {
+          "name": "kd_provinsi_wilayah_harga",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_kabupaten_wilayah_harga": {
+          "name": "kd_kabupaten_wilayah_harga",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "id": {
+          "name": "id",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "nextval('seq_paket_purchase'::regclass)"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.tokodaring_realisasi": {
+      "name": "tokodaring_realisasi",
+      "schema": "",
+      "columns": {
+        "jenis_transaksi": {
+          "name": "jenis_transaksi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kategori": {
+          "name": "kategori",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "keterangan_ppmse": {
+          "name": "keterangan_ppmse",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kota_kab": {
+          "name": "kota_kab",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "marketplace": {
+          "name": "marketplace",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "metode_bayar": {
+          "name": "metode_bayar",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_merchant": {
+          "name": "nama_merchant",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_pemesan": {
+          "name": "nama_pemesan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "order_desc": {
+          "name": "order_desc",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "order_id": {
+          "name": "order_id",
+          "type": "varchar",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "provinsi": {
+          "name": "provinsi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_konfirmasi_ppmse": {
+          "name": "status_konfirmasi_ppmse",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_verif": {
+          "name": "status_verif",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "sumber_data": {
+          "name": "sumber_data",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tanggal_transaksi": {
+          "name": "tanggal_transaksi",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "valuasi": {
+          "name": "valuasi",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.rup_master_satker_tahun": {
+      "name": "rup_master_satker_tahun",
+      "schema": "",
+      "columns": {
+        "tahun": {
+          "name": "tahun",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "satker": {
+          "name": "satker",
+          "type": "integer[]",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.paket_nontender_selesai": {
+      "name": "paket_nontender_selesai",
+      "schema": "",
+      "columns": {
+        "hps": {
+          "name": "hps",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_pengadaan": {
+          "name": "jenis_pengadaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_lpse": {
+          "name": "kd_lpse",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_nontender": {
+          "name": "kd_nontender",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "kd_penyedia": {
+          "name": "kd_penyedia",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_pkt_dce": {
+          "name": "kd_pkt_dce",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_rup": {
+          "name": "kd_rup",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker_str": {
+          "name": "kd_satker_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kontrak_pembayaran": {
+          "name": "kontrak_pembayaran",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kualifikasi_paket": {
+          "name": "kualifikasi_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "mak": {
+          "name": "mak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "mtd_pemilihan": {
+          "name": "mtd_pemilihan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_lpse": {
+          "name": "nama_lpse",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_paket": {
+          "name": "nama_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_penyedia": {
+          "name": "nama_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_kontrak": {
+          "name": "nilai_kontrak",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_negosiasi": {
+          "name": "nilai_negosiasi",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_pdn_kontrak": {
+          "name": "nilai_pdn_kontrak",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_penawaran": {
+          "name": "nilai_penawaran",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_terkoreksi": {
+          "name": "nilai_terkoreksi",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_umk_kontrak": {
+          "name": "nilai_umk_kontrak",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nip_nama_pokja": {
+          "name": "nip_nama_pokja",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nip_nama_pp": {
+          "name": "nip_nama_pp",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nip_nama_ppk": {
+          "name": "nip_nama_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "npwp_penyedia": {
+          "name": "npwp_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pagu": {
+          "name": "pagu",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_nontender": {
+          "name": "status_nontender",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "sumber_dana": {
+          "name": "sumber_dana",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_pengumuman_nontender": {
+          "name": "tgl_pengumuman_nontender",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_selesai_nontender": {
+          "name": "tgl_selesai_nontender",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "url_lpse": {
+          "name": "url_lpse",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "id": {
+          "name": "id",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "nextval('seq_paket_nontender_selesai'::regclass)"
+        },
+        "_event_date": {
+          "name": "_event_date",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "npwp16_penyedia": {
+          "name": "npwp16_penyedia",
+          "type": "char(20)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "lpse_id": {
+          "name": "lpse_id",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_penarikan": {
+          "name": "tgl_penarikan",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.paket_purchase_old": {
+      "name": "paket_purchase_old",
+      "schema": "",
+      "columns": {
+        "no_paket": {
+          "name": "no_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "nama_komoditas": {
+          "name": "nama_komoditas",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_paket": {
+          "name": "nama_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "rup_id": {
+          "name": "rup_id",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_sumber_dana": {
+          "name": "nama_sumber_dana",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kode_anggaran": {
+          "name": "kode_anggaran",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_instansi": {
+          "name": "jenis_instansi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_instansi": {
+          "name": "nama_instansi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satuan_kerja": {
+          "name": "nama_satuan_kerja",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "satuan_kerja_alamat": {
+          "name": "satuan_kerja_alamat",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "satuan_kerja_npwp": {
+          "name": "satuan_kerja_npwp",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tanggal_buat_paket": {
+          "name": "tanggal_buat_paket",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tanggal_edit_paket": {
+          "name": "tanggal_edit_paket",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_pembuat_paket": {
+          "name": "nama_pembuat_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_telp_pembuat_paket": {
+          "name": "no_telp_pembuat_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "email_pembuat_paket": {
+          "name": "email_pembuat_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_ppk": {
+          "name": "nama_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jabatan_ppk": {
+          "name": "jabatan_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ppk_nip": {
+          "name": "ppk_nip",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_penyedia": {
+          "name": "nama_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alamat_penyedia": {
+          "name": "alamat_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "email_penyedia": {
+          "name": "email_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_telp_penyedia": {
+          "name": "no_telp_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_distributor": {
+          "name": "nama_distributor",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alamat_distributor": {
+          "name": "alamat_distributor",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "email_distributor": {
+          "name": "email_distributor",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_telp_distributor": {
+          "name": "no_telp_distributor",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jml_jenis_produk": {
+          "name": "jml_jenis_produk",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "total": {
+          "name": "total",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "npwp_penyedia": {
+          "name": "npwp_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "npwp_distributor": {
+          "name": "npwp_distributor",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_paket": {
+          "name": "status_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_katalog": {
+          "name": "jenis_katalog",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_kategori": {
+          "name": "nama_kategori",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_manufaktur": {
+          "name": "nama_manufaktur",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_produk": {
+          "name": "nama_produk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "jenis_produk": {
+          "name": "jenis_produk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kuantitas": {
+          "name": "kuantitas",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "harga_satuan": {
+          "name": "harga_satuan",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ongkos_kirim": {
+          "name": "ongkos_kirim",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "total_harga": {
+          "name": "total_harga",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "deskripsi": {
+          "name": "deskripsi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "paket_status_str": {
+          "name": "paket_status_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "catatan_produk": {
+          "name": "catatan_produk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tkdn_produk": {
+          "name": "tkdn_produk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "penyedia_ukm": {
+          "name": "penyedia_ukm",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_provinsi_wilayah_harga": {
+          "name": "kd_provinsi_wilayah_harga",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_kabupaten_wilayah_harga": {
+          "name": "kd_kabupaten_wilayah_harga",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "id": {
+          "name": "id",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "nextval('seq_paket_purchase_old'::regclass)"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.bast_nontender": {
+      "name": "bast_nontender",
+      "schema": "",
+      "columns": {
+        "kd_nontender": {
+          "name": "kd_nontender",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker_str": {
+          "name": "kd_satker_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alamat_satker": {
+          "name": "alamat_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_lpse": {
+          "name": "kd_lpse",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_paket": {
+          "name": "nama_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "mtd_pengadaan": {
+          "name": "mtd_pengadaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "lingkup_pekerjaan": {
+          "name": "lingkup_pekerjaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_sppbj": {
+          "name": "no_sppbj",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_kontrak": {
+          "name": "no_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_kontrak": {
+          "name": "tgl_kontrak",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_kontrak": {
+          "name": "nilai_kontrak",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nip_ppk": {
+          "name": "nip_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_ppk": {
+          "name": "nama_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jabatan_ppk": {
+          "name": "jabatan_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_sk_ppk": {
+          "name": "no_sk_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jabatan_penandatangan_sk": {
+          "name": "jabatan_penandatangan_sk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_penyedia": {
+          "name": "nama_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alamat_penyedia": {
+          "name": "alamat_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "npwp_penyedia": {
+          "name": "npwp_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "wakil_sah_penyedia": {
+          "name": "wakil_sah_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jabatan_wakil_penyedia": {
+          "name": "jabatan_wakil_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_bast": {
+          "name": "no_bast",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_bast": {
+          "name": "tgl_bast",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_bap": {
+          "name": "no_bap",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_bap": {
+          "name": "tgl_bap",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "besar_pembayaran": {
+          "name": "besar_pembayaran",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "progres_pekerjaan": {
+          "name": "progres_pekerjaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "cara_pembayaran_kontrak": {
+          "name": "cara_pembayaran_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_kontrak": {
+          "name": "status_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_penetapan_status_kontrak": {
+          "name": "tgl_penetapan_status_kontrak",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alasan_penetapan_status_kontrak": {
+          "name": "alasan_penetapan_status_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "apakah_addendum": {
+          "name": "apakah_addendum",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "versi_addendum": {
+          "name": "versi_addendum",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alasan_addendum": {
+          "name": "alasan_addendum",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "id": {
+          "name": "id",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "nextval('seq_bast_nontender'::regclass)"
+        },
+        "npwp_16_penyedia": {
+          "name": "npwp_16_penyedia",
+          "type": "varchar(20)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "_event_date": {
+          "name": "_event_date",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "_inserted_date": {
+          "name": "_inserted_date",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.isb_api": {
+      "name": "isb_api",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "default": 0
+        },
+        "api_kelompok": {
+          "name": "api_kelompok",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "''"
+        },
+        "api_layanan": {
+          "name": "api_layanan",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "''"
+        },
+        "api_keterangan": {
+          "name": "api_keterangan",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "is_active": {
+          "name": "is_active",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": true
+        },
+        "api_url": {
+          "name": "api_url",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "''"
+        },
+        "api_param": {
+          "name": "api_param",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "''"
+        },
+        "api_lastupdate": {
+          "name": "api_lastupdate",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.rup_master_komponen": {
+      "name": "rup_master_komponen",
+      "schema": "",
+      "columns": {
+        "is_deleted": {
+          "name": "is_deleted",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_kegiatan": {
+          "name": "kd_kegiatan",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_komponen": {
+          "name": "kd_komponen",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "kd_komponen_lokal": {
+          "name": "kd_komponen_lokal",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_komponen_str": {
+          "name": "kd_komponen_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_kro": {
+          "name": "kd_kro",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_program": {
+          "name": "kd_program",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_ro": {
+          "name": "kd_ro",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_komponen": {
+          "name": "nama_komponen",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pagu_komponen": {
+          "name": "pagu_komponen",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.rup_master_kegiatan": {
+      "name": "rup_master_kegiatan",
+      "schema": "",
+      "columns": {
+        "is_deleted": {
+          "name": "is_deleted",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_kegiatan": {
+          "name": "kd_kegiatan",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "kd_kegiatan_lokal": {
+          "name": "kd_kegiatan_lokal",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_kegiatan_str": {
+          "name": "kd_kegiatan_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_program": {
+          "name": "kd_program",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_kegiatan": {
+          "name": "nama_kegiatan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pagu_kegiatan": {
+          "name": "pagu_kegiatan",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.rup_master_provinsi": {
+      "name": "rup_master_provinsi",
+      "schema": "",
+      "columns": {
+        "kd_provinsi": {
+          "name": "kd_provinsi",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "nama_provinsi": {
+          "name": "nama_provinsi",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.rup_master_kabupaten": {
+      "name": "rup_master_kabupaten",
+      "schema": "",
+      "columns": {
+        "kd_kabkota": {
+          "name": "kd_kabkota",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "kd_provinsi": {
+          "name": "kd_provinsi",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "nama_kabkota": {
+          "name": "nama_kabkota",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "fk_kab_propinsi": {
+          "name": "fk_kab_propinsi",
+          "tableFrom": "rup_master_kabupaten",
+          "tableTo": "rup_master_provinsi",
+          "schemaTo": "public",
+          "columnsFrom": [
+            "kd_provinsi"
+          ],
+          "columnsTo": [
+            "kd_provinsi"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "cascade"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.rup_master_subkegiatan": {
+      "name": "rup_master_subkegiatan",
+      "schema": "",
+      "columns": {
+        "is_deleted": {
+          "name": "is_deleted",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_kegiatan": {
+          "name": "kd_kegiatan",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_program": {
+          "name": "kd_program",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_subkegiatan": {
+          "name": "kd_subkegiatan",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "kd_subkegiatan_lokal": {
+          "name": "kd_subkegiatan_lokal",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_subkegiatan_str": {
+          "name": "kd_subkegiatan_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_subkegiatan": {
+          "name": "nama_subkegiatan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pagu_subkegiatan": {
+          "name": "pagu_subkegiatan",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.rup_master_kro": {
+      "name": "rup_master_kro",
+      "schema": "",
+      "columns": {
+        "is_deleted": {
+          "name": "is_deleted",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_kegiatan": {
+          "name": "kd_kegiatan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_kro": {
+          "name": "kd_kro",
+          "type": "varchar",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "kd_kro_lokal": {
+          "name": "kd_kro_lokal",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_kro_str": {
+          "name": "kd_kro_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_program": {
+          "name": "kd_program",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_kro": {
+          "name": "nama_kro",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pagu_kro": {
+          "name": "pagu_kro",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.rup_struktur_anggaran_pd": {
+      "name": "rup_struktur_anggaran_pd",
+      "schema": "",
+      "columns": {
+        "belanja_btt": {
+          "name": "belanja_btt",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "belanja_modal": {
+          "name": "belanja_modal",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "belanja_non_pengadaan": {
+          "name": "belanja_non_pengadaan",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "belanja_operasi": {
+          "name": "belanja_operasi",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "belanja_pengadaan": {
+          "name": "belanja_pengadaan",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "kd_satker_str": {
+          "name": "kd_satker_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "total_belanja": {
+          "name": "total_belanja",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.rup_master_ro": {
+      "name": "rup_master_ro",
+      "schema": "",
+      "columns": {
+        "is_deleted": {
+          "name": "is_deleted",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_kegiatan": {
+          "name": "kd_kegiatan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_kro": {
+          "name": "kd_kro",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_program": {
+          "name": "kd_program",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_ro": {
+          "name": "kd_ro",
+          "type": "varchar",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "kd_ro_lokal": {
+          "name": "kd_ro_lokal",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_ro_str": {
+          "name": "kd_ro_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_ro": {
+          "name": "nama_ro",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pagu_ro": {
+          "name": "pagu_ro",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.rup_master_subkomponen": {
+      "name": "rup_master_subkomponen",
+      "schema": "",
+      "columns": {
+        "is_deleted": {
+          "name": "is_deleted",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_kegiatan": {
+          "name": "kd_kegiatan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_komponen": {
+          "name": "kd_komponen",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_kro": {
+          "name": "kd_kro",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_program": {
+          "name": "kd_program",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_ro": {
+          "name": "kd_ro",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_subkomponen": {
+          "name": "kd_subkomponen",
+          "type": "varchar",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "kd_subkomponen_lokal": {
+          "name": "kd_subkomponen_lokal",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_subkomponen_str": {
+          "name": "kd_subkomponen_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_subkomponen": {
+          "name": "nama_subkomponen",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pagu_subkomponen": {
+          "name": "pagu_subkomponen",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.rup_paket_anggaran_swakelola": {
+      "name": "rup_paket_anggaran_swakelola",
+      "schema": "",
+      "columns": {
+        "asal_dana_klpd": {
+          "name": "asal_dana_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "asal_dana_satker": {
+          "name": "asal_dana_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_kegiatan": {
+          "name": "kd_kegiatan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_komponen": {
+          "name": "kd_komponen",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_rup": {
+          "name": "kd_rup",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "kd_rup_lokal": {
+          "name": "kd_rup_lokal",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker_str": {
+          "name": "kd_satker_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_subkegiatan": {
+          "name": "kd_subkegiatan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "mak": {
+          "name": "mak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pagu": {
+          "name": "pagu",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_aktif_rup": {
+          "name": "status_aktif_rup",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_delete_rup": {
+          "name": "status_delete_rup",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_umumkan_rup": {
+          "name": "status_umumkan_rup",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "sumber_dana": {
+          "name": "sumber_dana",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tahun_anggaran_dana": {
+          "name": "tahun_anggaran_dana",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "id": {
+          "name": "id",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "nextval('seq_rup_paket_anggaran_swakelola'::regclass)"
+        },
+        "asal_dana": {
+          "name": "asal_dana",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "_event_date": {
+          "name": "_event_date",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.rup_master_program": {
+      "name": "rup_master_program",
+      "schema": "",
+      "columns": {
+        "is_deleted": {
+          "name": "is_deleted",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_program": {
+          "name": "kd_program",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "kd_program_lokal": {
+          "name": "kd_program_lokal",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_program_str": {
+          "name": "kd_program_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_program": {
+          "name": "nama_program",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pagu_program": {
+          "name": "pagu_program",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.paket_tender": {
+      "name": "paket_tender",
+      "schema": "",
+      "columns": {
+        "hps": {
+          "name": "hps",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_pengadaan": {
+          "name": "jenis_pengadaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_lpse": {
+          "name": "kd_lpse",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_pkt_dce": {
+          "name": "kd_pkt_dce",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_rup": {
+          "name": "kd_rup",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker_str": {
+          "name": "kd_satker_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_tender": {
+          "name": "kd_tender",
+          "type": "bigint",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "ket_ditutup": {
+          "name": "ket_ditutup",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ket_diulang": {
+          "name": "ket_diulang",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kontrak_pembayaran": {
+          "name": "kontrak_pembayaran",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kualifikasi_paket": {
+          "name": "kualifikasi_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "lokasi_pekerjaan": {
+          "name": "lokasi_pekerjaan",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "mtd_evaluasi": {
+          "name": "mtd_evaluasi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "mtd_kualifikasi": {
+          "name": "mtd_kualifikasi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "mtd_pemilihan": {
+          "name": "mtd_pemilihan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_lpse": {
+          "name": "nama_lpse",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_paket": {
+          "name": "nama_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "nama_pokja": {
+          "name": "nama_pokja",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_ppk": {
+          "name": "nama_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nip_pokja": {
+          "name": "nip_pokja",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nip_ppk": {
+          "name": "nip_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pagu": {
+          "name": "pagu",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_tender": {
+          "name": "status_tender",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "sumber_dana": {
+          "name": "sumber_dana",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tanggal_status": {
+          "name": "tanggal_status",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_buat_paket": {
+          "name": "tgl_buat_paket",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_kolektif_kolegial": {
+          "name": "tgl_kolektif_kolegial",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_pengumuman_tender": {
+          "name": "tgl_pengumuman_tender",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "url_lpse": {
+          "name": "url_lpse",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "versi_tender": {
+          "name": "versi_tender",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "list_tahun_anggaran": {
+          "name": "list_tahun_anggaran",
+          "type": "varchar(250)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "max_lls_auditupdate": {
+          "name": "max_lls_auditupdate",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "_event_date": {
+          "name": "_event_date",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.paket_tender_selesai": {
+      "name": "paket_tender_selesai",
+      "schema": "",
+      "columns": {
+        "hps": {
+          "name": "hps",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_lpse": {
+          "name": "kd_lpse",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_paket": {
+          "name": "kd_paket",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_penyedia": {
+          "name": "kd_penyedia",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_rup_paket": {
+          "name": "kd_rup_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_tender": {
+          "name": "kd_tender",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_penyedia": {
+          "name": "nama_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_kontrak": {
+          "name": "nilai_kontrak",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_negosiasi": {
+          "name": "nilai_negosiasi",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_pdn_kontrak": {
+          "name": "nilai_pdn_kontrak",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_penawaran": {
+          "name": "nilai_penawaran",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_terkoreksi": {
+          "name": "nilai_terkoreksi",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_umk_kontrak": {
+          "name": "nilai_umk_kontrak",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "npwp_penyedia": {
+          "name": "npwp_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pagu": {
+          "name": "pagu",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_penetapan_pemenang": {
+          "name": "tgl_penetapan_pemenang",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_pengumuman_tender": {
+          "name": "tgl_pengumuman_tender",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "_event_date": {
+          "name": "_event_date",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "npwp_16_penyedia": {
+          "name": "npwp_16_penyedia",
+          "type": "char(20)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.paket_nontender": {
+      "name": "paket_nontender",
+      "schema": "",
+      "columns": {
+        "hps": {
+          "name": "hps",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_pengadaan": {
+          "name": "jenis_pengadaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_lpse": {
+          "name": "kd_lpse",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_nontender": {
+          "name": "kd_nontender",
+          "type": "bigint",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "kd_pkt_dce": {
+          "name": "kd_pkt_dce",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_rup": {
+          "name": "kd_rup",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker_str": {
+          "name": "kd_satker_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ket_ditutup": {
+          "name": "ket_ditutup",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ket_diulang": {
+          "name": "ket_diulang",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kontrak_pembayaran": {
+          "name": "kontrak_pembayaran",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kualifikasi_paket": {
+          "name": "kualifikasi_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "lokasi_pekerjaan": {
+          "name": "lokasi_pekerjaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "mak": {
+          "name": "mak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "mtd_pemilihan": {
+          "name": "mtd_pemilihan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_lpse": {
+          "name": "nama_lpse",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_paket": {
+          "name": "nama_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nip_nama_pokja": {
+          "name": "nip_nama_pokja",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nip_nama_pp": {
+          "name": "nip_nama_pp",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nip_nama_ppk": {
+          "name": "nip_nama_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pagu": {
+          "name": "pagu",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_nontender": {
+          "name": "status_nontender",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "sumber_dana": {
+          "name": "sumber_dana",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_buat_paket": {
+          "name": "tgl_buat_paket",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_kolektif_kolegial": {
+          "name": "tgl_kolektif_kolegial",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_pengumuman_nontender": {
+          "name": "tgl_pengumuman_nontender",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "url_lpse": {
+          "name": "url_lpse",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "versi_nontender": {
+          "name": "versi_nontender",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "repeat_order": {
+          "name": "repeat_order",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "lls_id": {
+          "name": "lls_id",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {
+        "spse_nontender_pengumuman_tahun": {
+          "name": "spse_nontender_pengumuman_tahun",
+          "columns": [
+            {
+              "expression": "tahun_anggaran",
+              "asc": true,
+              "nulls": "last",
+              "opclass": "int4_ops",
+              "isExpression": false
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.kontrak": {
+      "name": "kontrak",
+      "schema": "",
+      "columns": {
+        "kd_tender": {
+          "name": "kd_tender",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker_str": {
+          "name": "kd_satker_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alamat_satker": {
+          "name": "alamat_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_lpse": {
+          "name": "kd_lpse",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_paket": {
+          "name": "nama_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "lingkup_pekerjaan": {
+          "name": "lingkup_pekerjaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_sppbj": {
+          "name": "no_sppbj",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_kontrak": {
+          "name": "no_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tgl_kontrak": {
+          "name": "tgl_kontrak",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_kontrak_awal": {
+          "name": "tgl_kontrak_awal",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_kontrak_akhir": {
+          "name": "tgl_kontrak_akhir",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kota_kontrak": {
+          "name": "kota_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nip_ppk": {
+          "name": "nip_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_ppk": {
+          "name": "nama_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jabatan_ppk": {
+          "name": "jabatan_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_sk_ppk": {
+          "name": "no_sk_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_penyedia": {
+          "name": "kd_penyedia",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "nama_penyedia": {
+          "name": "nama_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "npwp_penyedia": {
+          "name": "npwp_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "bentuk_usaha_penyedia": {
+          "name": "bentuk_usaha_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tipe_penyedia": {
+          "name": "tipe_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "anggota_kso": {
+          "name": "anggota_kso",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "wakil_sah_penyedia": {
+          "name": "wakil_sah_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jabatan_wakil_penyedia": {
+          "name": "jabatan_wakil_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_rek_bank": {
+          "name": "nama_rek_bank",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_rek_bank": {
+          "name": "no_rek_bank",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_pemilik_rek_bank": {
+          "name": "nama_pemilik_rek_bank",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_kontrak": {
+          "name": "nilai_kontrak",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alasan_ubah_nilai_kontrak": {
+          "name": "alasan_ubah_nilai_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alasan_nilai_kontrak_10_persen": {
+          "name": "alasan_nilai_kontrak_10_persen",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_pdn_kontrak": {
+          "name": "nilai_pdn_kontrak",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_umk_kontrak": {
+          "name": "nilai_umk_kontrak",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_kontrak": {
+          "name": "jenis_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "informasi_lainnya": {
+          "name": "informasi_lainnya",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_kontrak": {
+          "name": "status_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_penetapan_status_kontrak": {
+          "name": "tgl_penetapan_status_kontrak",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alasan_penetapan_status_kontrak": {
+          "name": "alasan_penetapan_status_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "apakah_addendum": {
+          "name": "apakah_addendum",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "versi_addendum": {
+          "name": "versi_addendum",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alasan_addendum": {
+          "name": "alasan_addendum",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "id": {
+          "name": "id",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "nextval('seq_kontrak'::regclass)"
+        },
+        "npwp_16_penyedia": {
+          "name": "npwp_16_penyedia",
+          "type": "varchar(20)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.rup_master_satker": {
+      "name": "rup_master_satker",
+      "schema": "",
+      "columns": {
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "alamat": {
+          "name": "alamat",
+          "type": "varchar(200)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "fax": {
+          "name": "fax",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_satker": {
+          "name": "jenis_satker",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar(20)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker_str": {
+          "name": "kd_satker_str",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ket_satker": {
+          "name": "ket_satker",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kode_eselon": {
+          "name": "kode_eselon",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kodepos": {
+          "name": "kodepos",
+          "type": "varchar(10)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar(200)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar(200)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_satker": {
+          "name": "status_satker",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "telepon": {
+          "name": "telepon",
+          "type": "varchar(20)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.rup_paket_anggaran": {
+      "name": "rup_paket_anggaran",
+      "schema": "",
+      "columns": {
+        "asal_dana_klpd": {
+          "name": "asal_dana_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "asal_dana_satker": {
+          "name": "asal_dana_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_kegiatan": {
+          "name": "kd_kegiatan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_komponen": {
+          "name": "kd_komponen",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_rup": {
+          "name": "kd_rup",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "kd_rup_lokal": {
+          "name": "kd_rup_lokal",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "kd_satker_str": {
+          "name": "kd_satker_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_subkegiatan": {
+          "name": "kd_subkegiatan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "mak": {
+          "name": "mak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pagu": {
+          "name": "pagu",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_aktif_rup": {
+          "name": "status_aktif_rup",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_delete_rup": {
+          "name": "status_delete_rup",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_umumkan_rup": {
+          "name": "status_umumkan_rup",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "sumber_dana": {
+          "name": "sumber_dana",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran_dana": {
+          "name": "tahun_anggaran_dana",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "id": {
+          "name": "id",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "nextval('seq_rup_paket_anggaran'::regclass)"
+        },
+        "asal_dana": {
+          "name": "asal_dana",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "_event_date": {
+          "name": "_event_date",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.rup_paket_lokasi": {
+      "name": "rup_paket_lokasi",
+      "schema": "",
+      "columns": {
+        "detail_lokasi": {
+          "name": "detail_lokasi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kab_kota": {
+          "name": "kab_kota",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_kab_kota": {
+          "name": "kd_kab_kota",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_provinsi": {
+          "name": "kd_provinsi",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_rup": {
+          "name": "kd_rup",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "kd_satker_str": {
+          "name": "kd_satker_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "provinsi": {
+          "name": "provinsi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "id": {
+          "name": "id",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "nextval('seq_rup_paket_lokasi'::regclass)"
+        },
+        "_event_date": {
+          "name": "_event_date",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.pencatatan": {
+      "name": "pencatatan",
+      "schema": "",
+      "columns": {
+        "kd_nontender_pct": {
+          "name": "kd_nontender_pct",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker_str": {
+          "name": "kd_satker_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_lpse": {
+          "name": "kd_lpse",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_pkt_dce": {
+          "name": "kd_pkt_dce",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_rup": {
+          "name": "kd_rup",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_paket": {
+          "name": "nama_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pagu": {
+          "name": "pagu",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "total_realisasi": {
+          "name": "total_realisasi",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_pdn_pct": {
+          "name": "nilai_pdn_pct",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_umk_pct": {
+          "name": "nilai_umk_pct",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "sumber_dana": {
+          "name": "sumber_dana",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "uraian_pekerjaan": {
+          "name": "uraian_pekerjaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "informasi_lainnya": {
+          "name": "informasi_lainnya",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kategori_pengadaan": {
+          "name": "kategori_pengadaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "mtd_pemilihan": {
+          "name": "mtd_pemilihan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "bukti_pembayaran": {
+          "name": "bukti_pembayaran",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_nontender_pct": {
+          "name": "status_nontender_pct",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_nontender_pct_ket": {
+          "name": "status_nontender_pct_ket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alasan_pembatalan": {
+          "name": "alasan_pembatalan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nip_ppk": {
+          "name": "nip_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_ppk": {
+          "name": "nama_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_buat_paket": {
+          "name": "tgl_buat_paket",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_mulai_paket": {
+          "name": "tgl_mulai_paket",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_selesai_paket": {
+          "name": "tgl_selesai_paket",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "_event_date": {
+          "name": "_event_date",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.rup_paket_swakelola": {
+      "name": "rup_paket_swakelola",
+      "schema": "",
+      "columns": {
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd_penyelenggara": {
+          "name": "kd_klpd_penyelenggara",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_rup": {
+          "name": "kd_rup",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "kd_rup_lokal": {
+          "name": "kd_rup_lokal",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker_str": {
+          "name": "kd_satker_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd_penyelenggara": {
+          "name": "nama_klpd_penyelenggara",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_paket": {
+          "name": "nama_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_ppk": {
+          "name": "nama_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker_penyelenggara": {
+          "name": "nama_satker_penyelenggara",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nip_ppk": {
+          "name": "nip_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pagu": {
+          "name": "pagu",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_aktif_rup": {
+          "name": "status_aktif_rup",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_delete_rup": {
+          "name": "status_delete_rup",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_umumkan_rup": {
+          "name": "status_umumkan_rup",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_akhir_pelaksanaan_kontrak": {
+          "name": "tgl_akhir_pelaksanaan_kontrak",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_awal_pelaksanaan_kontrak": {
+          "name": "tgl_awal_pelaksanaan_kontrak",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_buat_paket": {
+          "name": "tgl_buat_paket",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_pengumuman_paket": {
+          "name": "tgl_pengumuman_paket",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tipe_swakelola": {
+          "name": "tipe_swakelola",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "uraian_pekerjaan": {
+          "name": "uraian_pekerjaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "username_ppk": {
+          "name": "username_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "volume_pekerjaan": {
+          "name": "volume_pekerjaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "_event_date": {
+          "name": "_event_date",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {
+        "rup_paket_swakelola_terumumkan_tahun": {
+          "name": "rup_paket_swakelola_terumumkan_tahun",
+          "columns": [
+            {
+              "expression": "tahun_anggaran",
+              "asc": true,
+              "nulls": "last",
+              "opclass": "int4_ops",
+              "isExpression": false
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.rup_paket_swakelola_lokasi": {
+      "name": "rup_paket_swakelola_lokasi",
+      "schema": "",
+      "columns": {
+        "detail_lokasi": {
+          "name": "detail_lokasi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kab_kota": {
+          "name": "kab_kota",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_kab_kota": {
+          "name": "kd_kab_kota",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_provinsi": {
+          "name": "kd_provinsi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_rup": {
+          "name": "kd_rup",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker_str": {
+          "name": "kd_satker_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "provinsi": {
+          "name": "provinsi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "_event_date": {
+          "name": "_event_date",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.bast": {
+      "name": "bast",
+      "schema": "",
+      "columns": {
+        "kd_tender": {
+          "name": "kd_tender",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker_str": {
+          "name": "kd_satker_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alamat_satker": {
+          "name": "alamat_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_lpse": {
+          "name": "kd_lpse",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_paket": {
+          "name": "nama_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_sppbj": {
+          "name": "no_sppbj",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_kontrak": {
+          "name": "no_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_kontrak": {
+          "name": "tgl_kontrak",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_kontrak": {
+          "name": "nilai_kontrak",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_ppk": {
+          "name": "nama_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nip_ppk": {
+          "name": "nip_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jabatan_ppk": {
+          "name": "jabatan_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_sk_ppk": {
+          "name": "no_sk_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jabatan_penandatangan_sk": {
+          "name": "jabatan_penandatangan_sk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_penyedia": {
+          "name": "nama_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alamat_penyedia": {
+          "name": "alamat_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "npwp_penyedia": {
+          "name": "npwp_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "wakil_sah_penyedia": {
+          "name": "wakil_sah_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jabatan_wakil_penyedia": {
+          "name": "jabatan_wakil_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_bast": {
+          "name": "no_bast",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_bast": {
+          "name": "tgl_bast",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_bap": {
+          "name": "no_bap",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_bap": {
+          "name": "tgl_bap",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "besar_pembayaran": {
+          "name": "besar_pembayaran",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "progres_pekerjaan": {
+          "name": "progres_pekerjaan",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "cara_pembayaran_kontrak": {
+          "name": "cara_pembayaran_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_kontrak": {
+          "name": "status_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_penetapan_status_kontrak": {
+          "name": "tgl_penetapan_status_kontrak",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alasan_penetapan_status_kontrak": {
+          "name": "alasan_penetapan_status_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "apakah_addendum": {
+          "name": "apakah_addendum",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "versi_addendum": {
+          "name": "versi_addendum",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alasan_addendum": {
+          "name": "alasan_addendum",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "id": {
+          "name": "id",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "nextval('seq_bast'::regclass)"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.kontrak_nontender": {
+      "name": "kontrak_nontender",
+      "schema": "",
+      "columns": {
+        "kd_nontender": {
+          "name": "kd_nontender",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker_str": {
+          "name": "kd_satker_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alamat_satker": {
+          "name": "alamat_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_lpse": {
+          "name": "kd_lpse",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_paket": {
+          "name": "nama_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "mtd_pengadaan": {
+          "name": "mtd_pengadaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "lingkup_pekerjaan": {
+          "name": "lingkup_pekerjaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_sppbj": {
+          "name": "no_sppbj",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_kontrak": {
+          "name": "no_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_kontrak": {
+          "name": "tgl_kontrak",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_kontrak_awal": {
+          "name": "tgl_kontrak_awal",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_kontrak_akhir": {
+          "name": "tgl_kontrak_akhir",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kota_kontrak": {
+          "name": "kota_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nip_ppk": {
+          "name": "nip_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_ppk": {
+          "name": "nama_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jabatan_ppk": {
+          "name": "jabatan_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_sk_ppk": {
+          "name": "no_sk_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_penyedia": {
+          "name": "nama_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "npwp_penyedia": {
+          "name": "npwp_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "bentuk_usaha_penyedia": {
+          "name": "bentuk_usaha_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tipe_penyedia": {
+          "name": "tipe_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "anggota_kso": {
+          "name": "anggota_kso",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "wakil_sah_penyedia": {
+          "name": "wakil_sah_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jabatan_wakil_penyedia": {
+          "name": "jabatan_wakil_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_rek_bank": {
+          "name": "nama_rek_bank",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_rek_bank": {
+          "name": "no_rek_bank",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_pemilik_rek_bank": {
+          "name": "nama_pemilik_rek_bank",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_kontrak": {
+          "name": "nilai_kontrak",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alasan_ubah_nilai_kontrak": {
+          "name": "alasan_ubah_nilai_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alasan_nilai_kontrak_10_persen": {
+          "name": "alasan_nilai_kontrak_10_persen",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_pdn_kontrak": {
+          "name": "nilai_pdn_kontrak",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_umk_kontrak": {
+          "name": "nilai_umk_kontrak",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_kontrak": {
+          "name": "jenis_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "informasi_lainnya": {
+          "name": "informasi_lainnya",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_kontrak": {
+          "name": "status_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_penetapan_status_kontrak": {
+          "name": "tgl_penetapan_status_kontrak",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alasan_penetapan_status_kontrak": {
+          "name": "alasan_penetapan_status_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "apakah_addendum": {
+          "name": "apakah_addendum",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "versi_addendum": {
+          "name": "versi_addendum",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alasan_addendum": {
+          "name": "alasan_addendum",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "id": {
+          "name": "id",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "nextval('seq_kontrak_nontender'::regclass)"
+        },
+        "npwp16_penyedia": {
+          "name": "npwp16_penyedia",
+          "type": "varchar(20)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.rup_paket": {
+      "name": "rup_paket",
+      "schema": "",
+      "columns": {
+        "alasan_non_ukm": {
+          "name": "alasan_non_ukm",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_pengadaan": {
+          "name": "jenis_pengadaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_jenis_pengadaan": {
+          "name": "kd_jenis_pengadaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_metode_pengadaan": {
+          "name": "kd_metode_pengadaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_rup": {
+          "name": "kd_rup",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "kd_rup_lokal": {
+          "name": "kd_rup_lokal",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_rup_swakelola": {
+          "name": "kd_rup_swakelola",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker_str": {
+          "name": "kd_satker_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "metode_pengadaan": {
+          "name": "metode_pengadaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_paket": {
+          "name": "nama_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_ppk": {
+          "name": "nama_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nip_ppk": {
+          "name": "nip_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pagu": {
+          "name": "pagu",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "spesifikasi_pekerjaan": {
+          "name": "spesifikasi_pekerjaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_aktif_rup": {
+          "name": "status_aktif_rup",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_delete_rup": {
+          "name": "status_delete_rup",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_konsolidasi": {
+          "name": "status_konsolidasi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_pdn": {
+          "name": "status_pdn",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_pradipa": {
+          "name": "status_pradipa",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_ukm": {
+          "name": "status_ukm",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_umumkan_rup": {
+          "name": "status_umumkan_rup",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_akhir_kontrak": {
+          "name": "tgl_akhir_kontrak",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_akhir_pemanfaatan": {
+          "name": "tgl_akhir_pemanfaatan",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_akhir_pemilihan": {
+          "name": "tgl_akhir_pemilihan",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_awal_kontrak": {
+          "name": "tgl_awal_kontrak",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_awal_pemanfaatan": {
+          "name": "tgl_awal_pemanfaatan",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_awal_pemilihan": {
+          "name": "tgl_awal_pemilihan",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_buat_paket": {
+          "name": "tgl_buat_paket",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_pengumuman_paket": {
+          "name": "tgl_pengumuman_paket",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tipe_paket": {
+          "name": "tipe_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "urarian_pekerjaan": {
+          "name": "urarian_pekerjaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "username_ppk": {
+          "name": "username_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "volume_pekerjaan": {
+          "name": "volume_pekerjaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_dikecualikan": {
+          "name": "status_dikecualikan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alasan_dikecualikan": {
+          "name": "alasan_dikecualikan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_pertama": {
+          "name": "tahun_pertama",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_rup_tahun_pertama": {
+          "name": "kd_rup_tahun_pertama",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nomor_kontrak": {
+          "name": "nomor_kontrak",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "spp_aspek_ekonomi": {
+          "name": "spp_aspek_ekonomi",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "spp_aspek_sosial": {
+          "name": "spp_aspek_sosial",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "spp_aspek_lingkungan": {
+          "name": "spp_aspek_lingkungan",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kode_rup_tahun_pertama": {
+          "name": "kode_rup_tahun_pertama",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "_event_date": {
+          "name": "_event_date",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {
+        "rup_paket_penyedia_terumumkan_tahun": {
+          "name": "rup_paket_penyedia_terumumkan_tahun",
+          "columns": [
+            {
+              "expression": "tahun_anggaran",
+              "asc": true,
+              "nulls": "last",
+              "opclass": "int4_ops",
+              "isExpression": false
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.rup_master_instansi": {
+      "name": "rup_master_instansi",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "varchar",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "nama": {
+          "name": "nama",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "prop_id": {
+          "name": "prop_id",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kabupaten_id": {
+          "name": "kabupaten_id",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alamat": {
+          "name": "alamat",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis": {
+          "name": "jenis",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.swakelola_realisasi": {
+      "name": "swakelola_realisasi",
+      "schema": "",
+      "columns": {
+        "kd_swakelola_pct": {
+          "name": "kd_swakelola_pct",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_lpse": {
+          "name": "kd_lpse",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_realisasi": {
+          "name": "jenis_realisasi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_realisasi": {
+          "name": "no_realisasi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_realisasi": {
+          "name": "tgl_realisasi",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_realisasi": {
+          "name": "nilai_realisasi",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "dok_realisasi": {
+          "name": "dok_realisasi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ket_realisasi": {
+          "name": "ket_realisasi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_pelaksana": {
+          "name": "nama_pelaksana",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "npwp_pelaksana": {
+          "name": "npwp_pelaksana",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nip_ppk": {
+          "name": "nip_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_ppk": {
+          "name": "nama_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "id": {
+          "name": "id",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "nextval('seq_swakelola_realisasi'::regclass)"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.swakelola": {
+      "name": "swakelola",
+      "schema": "",
+      "columns": {
+        "kd_swakelola_pct": {
+          "name": "kd_swakelola_pct",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker_str": {
+          "name": "kd_satker_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_lpse": {
+          "name": "kd_lpse",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_pkt_dce": {
+          "name": "kd_pkt_dce",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_rup": {
+          "name": "kd_rup",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_paket": {
+          "name": "nama_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pagu": {
+          "name": "pagu",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "total_realisasi": {
+          "name": "total_realisasi",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_pdn_pct": {
+          "name": "nilai_pdn_pct",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_umk_pct": {
+          "name": "nilai_umk_pct",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "sumber_dana": {
+          "name": "sumber_dana",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "uraian_pekerjaan": {
+          "name": "uraian_pekerjaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "informasi_lainnya": {
+          "name": "informasi_lainnya",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tipe_swakelola": {
+          "name": "tipe_swakelola",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tipe_swakelola_nama": {
+          "name": "tipe_swakelola_nama",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_swakelola_pct": {
+          "name": "status_swakelola_pct",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status_swakelola_pct_ket": {
+          "name": "status_swakelola_pct_ket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alasan_pembatalan": {
+          "name": "alasan_pembatalan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nip_ppk": {
+          "name": "nip_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_ppk": {
+          "name": "nama_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_buat_paket": {
+          "name": "tgl_buat_paket",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_mulai_paket": {
+          "name": "tgl_mulai_paket",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_selesai_paket": {
+          "name": "tgl_selesai_paket",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.pencatatan_realisasi": {
+      "name": "pencatatan_realisasi",
+      "schema": "",
+      "columns": {
+        "kd_nontender_pct": {
+          "name": "kd_nontender_pct",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_lpse": {
+          "name": "kd_lpse",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kategori_pengadaan": {
+          "name": "kategori_pengadaan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "mtd_pemilihan": {
+          "name": "mtd_pemilihan",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_realisasi": {
+          "name": "jenis_realisasi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "no_realisasi": {
+          "name": "no_realisasi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tgl_realisasi": {
+          "name": "tgl_realisasi",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nilai_realisasi": {
+          "name": "nilai_realisasi",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "dok_realisasi": {
+          "name": "dok_realisasi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ket_realisasi": {
+          "name": "ket_realisasi",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_penyedia": {
+          "name": "nama_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "npwp_penyedia": {
+          "name": "npwp_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nip_ppk": {
+          "name": "nip_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_ppk": {
+          "name": "nama_ppk",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "id": {
+          "name": "id",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "nextval('seq_pencatatan_realisasi'::regclass)"
+        },
+        "jenis_penyedia": {
+          "name": "jenis_penyedia",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jenis_klpd": {
+          "name": "jenis_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "_event_date": {
+          "name": "_event_date",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_satker_str": {
+          "name": "kd_satker_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_lpse": {
+          "name": "nama_lpse",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_paket_dce": {
+          "name": "kd_paket_dce",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_rup_paket": {
+          "name": "kd_rup_paket",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_paket": {
+          "name": "nama_paket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pagu": {
+          "name": "pagu",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.scheduled_tasks": {
+      "name": "scheduled_tasks",
+      "schema": "",
+      "columns": {
+        "task_name": {
+          "name": "task_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "task_instance": {
+          "name": "task_instance",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "task_data": {
+          "name": "task_data",
+          "type": "bytea",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "execution_time": {
+          "name": "execution_time",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "picked": {
+          "name": "picked",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "picked_by": {
+          "name": "picked_by",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "last_success": {
+          "name": "last_success",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "last_failure": {
+          "name": "last_failure",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "consecutive_failures": {
+          "name": "consecutive_failures",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "last_heartbeat": {
+          "name": "last_heartbeat",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "version": {
+          "name": "version",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "execution_time_idx": {
+          "name": "execution_time_idx",
+          "columns": [
+            {
+              "expression": "execution_time",
+              "asc": true,
+              "nulls": "last",
+              "opclass": "timestamptz_ops",
+              "isExpression": false
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "last_heartbeat_idx": {
+          "name": "last_heartbeat_idx",
+          "columns": [
+            {
+              "expression": "last_heartbeat",
+              "asc": true,
+              "nulls": "last",
+              "opclass": "timestamptz_ops",
+              "isExpression": false
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {
+        "scheduled_tasks_pkey": {
+          "name": "scheduled_tasks_pkey",
+          "columns": [
+            "task_name",
+            "task_instance"
+          ]
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.rup_struktur_anggaran_kl": {
+      "name": "rup_struktur_anggaran_kl",
+      "schema": "",
+      "columns": {
+        "belanja_barjas": {
+          "name": "belanja_barjas",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "belanja_modal": {
+          "name": "belanja_modal",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "belanja_nonpengadaan_hibah": {
+          "name": "belanja_nonpengadaan_hibah",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "belanja_nonpengadaan_lainnya": {
+          "name": "belanja_nonpengadaan_lainnya",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "belanja_nonpengadaan_sosial": {
+          "name": "belanja_nonpengadaan_sosial",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "belanja_pegawai": {
+          "name": "belanja_pegawai",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "belanja_pengadaan_hibah": {
+          "name": "belanja_pengadaan_hibah",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "belanja_pengadaan_lainnya": {
+          "name": "belanja_pengadaan_lainnya",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "belanja_pengadaan_sosial": {
+          "name": "belanja_pengadaan_sosial",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kd_klpd": {
+          "name": "kd_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "kd_satker": {
+          "name": "kd_satker",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "kd_satker_str": {
+          "name": "kd_satker_str",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_klpd": {
+          "name": "nama_klpd",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nama_satker": {
+          "name": "nama_satker",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tahun_anggaran": {
+          "name": "tahun_anggaran",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "total_belanja": {
+          "name": "total_belanja",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "total_belanja_hibah": {
+          "name": "total_belanja_hibah",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "total_belanja_lainnya": {
+          "name": "total_belanja_lainnya",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "total_belanja_sosial": {
+          "name": "total_belanja_sosial",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {
+        "rup_struktur_anggaran_kl_pkey": {
+          "name": "rup_struktur_anggaran_kl_pkey",
+          "columns": [
+            "kd_klpd",
+            "kd_satker",
+            "tahun_anggaran"
+          ]
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {
+    "public.seq_paket_tender_selesai": {
+      "name": "seq_paket_tender_selesai",
+      "schema": "public",
+      "startWith": "1",
+      "minValue": "1",
+      "maxValue": "9223372036854775807",
+      "increment": "1",
+      "cycle": false,
+      "cache": "1"
+    },
+    "public.seq_paket_nontender_selesai": {
+      "name": "seq_paket_nontender_selesai",
+      "schema": "public",
+      "startWith": "1",
+      "minValue": "1",
+      "maxValue": "9223372036854775807",
+      "increment": "1",
+      "cycle": false,
+      "cache": "1"
+    },
+    "public.seq_kontrak": {
+      "name": "seq_kontrak",
+      "schema": "public",
+      "startWith": "1",
+      "minValue": "1",
+      "maxValue": "9223372036854775807",
+      "increment": "1",
+      "cycle": false,
+      "cache": "1"
+    },
+    "public.seq_rup_paket_anggaran": {
+      "name": "seq_rup_paket_anggaran",
+      "schema": "public",
+      "startWith": "1",
+      "minValue": "1",
+      "maxValue": "9223372036854775807",
+      "increment": "1",
+      "cycle": false,
+      "cache": "1"
+    },
+    "public.seq_pencatatan_realisasi": {
+      "name": "seq_pencatatan_realisasi",
+      "schema": "public",
+      "startWith": "1",
+      "minValue": "1",
+      "maxValue": "9223372036854775807",
+      "increment": "1",
+      "cycle": false,
+      "cache": "1"
+    },
+    "public.seq_paket_purchase_old": {
+      "name": "seq_paket_purchase_old",
+      "schema": "public",
+      "startWith": "1",
+      "minValue": "1",
+      "maxValue": "9223372036854775807",
+      "increment": "1",
+      "cycle": false,
+      "cache": "1"
+    },
+    "public.seq_kontrak_nontender": {
+      "name": "seq_kontrak_nontender",
+      "schema": "public",
+      "startWith": "1",
+      "minValue": "1",
+      "maxValue": "9223372036854775807",
+      "increment": "1",
+      "cycle": false,
+      "cache": "1"
+    },
+    "public.seq_bast_nontender": {
+      "name": "seq_bast_nontender",
+      "schema": "public",
+      "startWith": "1",
+      "minValue": "1",
+      "maxValue": "9223372036854775807",
+      "increment": "1",
+      "cycle": false,
+      "cache": "1"
+    },
+    "public.seq_bast": {
+      "name": "seq_bast",
+      "schema": "public",
+      "startWith": "1",
+      "minValue": "1",
+      "maxValue": "9223372036854775807",
+      "increment": "1",
+      "cycle": false,
+      "cache": "1"
+    },
+    "public.seq_swakelola_realisasi": {
+      "name": "seq_swakelola_realisasi",
+      "schema": "public",
+      "startWith": "1",
+      "minValue": "1",
+      "maxValue": "9223372036854775807",
+      "increment": "1",
+      "cycle": false,
+      "cache": "1"
+    },
+    "public.seq_rup_paket_lokasi": {
+      "name": "seq_rup_paket_lokasi",
+      "schema": "public",
+      "startWith": "1",
+      "minValue": "1",
+      "maxValue": "9223372036854775807",
+      "increment": "1",
+      "cycle": false,
+      "cache": "1"
+    },
+    "public.seq_rup_paket_anggaran_swakelola": {
+      "name": "seq_rup_paket_anggaran_swakelola",
+      "schema": "public",
+      "startWith": "1",
+      "minValue": "1",
+      "maxValue": "9223372036854775807",
+      "increment": "1",
+      "cycle": false,
+      "cache": "1"
+    },
+    "public.seq_paket_purchase": {
+      "name": "seq_paket_purchase",
+      "schema": "public",
+      "startWith": "1",
+      "minValue": "1",
+      "maxValue": "9223372036854775807",
+      "increment": "1",
+      "cycle": false,
+      "cache": "1"
+    }
+  },
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  },
+  "internal": {
+    "tables": {
+      "rup_master_satker_tahun": {
+        "columns": {
+          "satker": {
+            "isArray": true,
+            "dimensions": 1,
+            "rawType": "integer"
+          }
+        }
+      }
+    }
+  }
+}
