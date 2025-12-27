@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %} Manajemen API {% endblock %}
+
+{% block breadcrumb %}
+<div class="d-flex align-items-center">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb m-0 p-0">
+            <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
+            <li class="breadcrumb-item">Manajemen API</li>
+        </ol>
+    </nav>
+</div>
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                {% include "alert.html" %}
+                <table id="zero_config" class="table table-striped table-bordered">
+                    <thead>
+                    <tr>
+                        <th width="25%">Layanan</th>
+                        <th>Service</th>
+                        <th width="15%">Last Updated</th>
+                        <th width="5%">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for api in list %}
+                    <tr>
+                        <td nowrap><a href="/config/{{ api.id }}" title="{{ api.api_keterangan }}">[{{ api.id }}] {{ api.api_layanan }}</a></td>
+                        <td>{{ api.api_url }}</td>
+                        <td>{{ api.api_lastupdate | date("dd-MM-yyyy HH:mm") }}</td>
+                        <td><a href="/update-api/{{ api.id }}" class="btn btn-success btn-sm" title="Update Data"><i class="fa fa-check-circle"></i></a></td>
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

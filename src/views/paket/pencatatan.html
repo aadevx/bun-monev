@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block title %} Pencatatan {% endblock %}
+
+{% block breadcrumb %}
+<h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Pencatatan</h3>
+    <div class="d-flex align-items-center">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb m-0 p-0">
+                <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
+                <li class="breadcrumb-item">Pencatatan</li>
+            </ol>
+        </nav>
+    </div>
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-3 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="p-2 bg-primary text-center">
+                                <h1 class="font-light text-white">{{ jumlahPaket }}</h1>
+                                <h6 class="text-white">Total Paket</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-3 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="p-2 bg-cyan text-center">
+                                <h1 class="font-light text-white">Rp {{ jumlahPagu }}</h1>
+                                <h6 class="text-white">Total Pagu</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form>
+                    <input type="hidden" name="tahun" value="{{ tahun }}">
+                    <input type="hidden" name="satker" value="{{ satker }}">
+                   <div class="customize-input input-group mb-3">
+                    <label class="input-group-text border-0">Jenis Pengadaan</label>
+                    <select name="jenis" class="select2 form-control custom-radius" onchange="this.form.submit()">
+                        <option {% if jenis is null %} selected {% endif %} value="">Semua</option>
+                       {% for obj in jenisList %}
+                       <option value="{{ obj }}" {% if obj == jenis %} selected {% endif %}>{{ obj }}</option>
+                       {% endfor %}
+                      </select>
+                    <label class="input-group-text border-0">Metode</label>
+                    <select name="metode" class="select2 form-control custom-radius" onchange="this.form.submit()">
+                        <option {% if metode is null %} selected {% endif %} value="">Semua</option>
+                       {% for obj in metodeList %}
+                       <option value="{{ obj }}" {% if obj == metode %} selected {% endif %}>{{ obj }}</option>
+                       {% endfor %}
+                      </select>
+                    <label class="input-group-text border-0">Status</label>
+                     <select name="status" class="select2 form-control custom-radius" onchange="this.form.submit()">
+                        <option {% if status is null %} selected {% endif %} value="">Semua</option>
+                       {% for obj in statusList %}
+                       <option value="{{ obj }}" {% if obj == status %} selected {% endif %}>{{ obj }}</option>
+                       {% endfor %}
+                      </select>
+                  </div>
+                </form>
+                <div class="table-responsive">
+                    <table id="sirupTbl" class="table table-bordered" style="width: 100%;">
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+{% include "js-datatable.html" %}
+<script>
+    new DataTable('#sirupTbl', {
+        ajax: '/pencatatan/data?tahun={{ tahun }}&satker={{ satker }}&jenis={{ jenis }}&metode={{ metode }}&status={{ status }}',
+        scrollX: true,
+         columns: [
+            {data: 'kd_nontender_pct', title: 'Kode Paket', width : '70px'},
+            {data: 'kd_rup', title: 'Kode RUP', width : '70px'},
+            {data: 'nama_paket', title: 'Nama Paket', width : '200px' , render: function(data,type,row){
+                    return '<a href="/pencatatan/' + row['kd_nontender_pct'] + '">'+data+'</a><p><div class="badge text-bg-primary">'
+                    +row["mtd_pemilihan"]+'</div>&nbsp;<div class="badge text-bg-secondary">'+row["kategori_pengadaan"]+'</div></p>';
+                }
+            },
+            {data: 'mtd_pemilihan', title: 'Metode', width : '100px'},
+            {data: 'tanggalPengumuman', title: 'Pengumuman', width : '150px'},
+            {data: 'tanggalSelesai', title: 'Selesai', width : '150px'},
+            {data: 'nama_satker', title : 'Satker', width : '200px', render: function(data,type,row){
+                       return data+'<br /><div class="badge text-bg-primary">'+row["kd_satker_str"]+'</div>';
+                }
+            },
+            {data : 'nama_ppk', title : 'PPK', width : '160px' , render: function(data,type,row){
+                    return data+'<br /><div class="badge text-bg-primary">'+row["nip_ppk"]+'</div>';
+                }
+            },
+            {data: 'paguformat', title: 'Pagu', width : '120px'},
+            {data: 'realisasiformat', title: 'Realisasi', width : '120px'},
+            {data: 'status_nontender_pct_ket', title: 'Status', width: '100px'},
+            {data: 'tahun_anggaran', title: 'TA', width : '50px'},
+        ],
+    });
+</script>
+{% endblock %}

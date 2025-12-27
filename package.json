@@ -1,0 +1,21 @@
+{
+  "name": "elysia",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "@elysiajs/html": "^1.4.0",
+    "@elysiajs/lucia-auth": "^1.2.0",
+    "@elysiajs/static": "^1.4.7",
+    "chokidar": "^5.0.0",
+    "elysia": "latest",
+    "nunjucks": "^3.2.4"
+  },
+  "devDependencies": {
+    "@types/nunjucks": "^3.2.6",
+    "bun-types": "latest"
+  },
+  "module": "src/index.js"
+}

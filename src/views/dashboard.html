@@ -1,0 +1,434 @@
+{% extends "base.html" %}
+
+{% block title %} Dashboard {% endblock %}
+{% block breadcrumb %}
+    <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Dashboard</h3>
+    <div class="d-flex align-items-center">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb m-0 p-0">
+                <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
+            </ol>
+        </nav>
+    </div>
+{% endblock %}
+{% block content %}
+<!-- *************************************************************** -->
+<!-- Start First Cards -->
+<!-- *************************************************************** -->
+<div class="row">
+    <div class="col-sm-6 col-lg-3">
+        <div class="card border-end">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div>
+                        <div class="d-inline-flex align-items-center">
+                            <h2 class="text-dark mb-1 font-weight-medium">{{ jumlahSatker }}</h2>
+                        </div>
+                        <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Total Satker
+                        </h6>
+                    </div>
+                    <div class="ms-auto mt-md-3 mt-lg-0">
+                        <span class="opacity-7 text-muted"><i data-feather="user-plus"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+        <div class="card border-end ">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div>
+                        <h2 class="text-dark mb-1 w-100 text-truncate font-weight-medium">{{ jumlahPaket }}</h2>
+                        <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Total Paket</h6>
+                    </div>
+                    <div class="ms-auto mt-md-3 mt-lg-0">
+                        <span class="opacity-7 text-muted"><i data-feather="package"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+        <div class="card border-end ">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div>
+                        <div class="d-inline-flex align-items-center">
+                            <h2 class="text-dark mb-1 font-weight-medium">{{ jumlahPagu }}</h2>
+                        </div>
+                        <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Total Pagu</h6>
+                    </div>
+                    <div class="ms-auto mt-md-3 mt-lg-0">
+                        <span class="opacity-7 text-muted"><i data-feather="file-plus"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+        <div class="card ">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div>
+                        <h2 class="text-dark mb-1 font-weight-medium">{{ jumlahPpk }}</h2>
+                        <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Total PPK</h6>
+                    </div>
+                    <div class="ms-auto mt-md-3 mt-lg-0">
+                        <span class="opacity-7 text-muted"><i data-feather="user-plus"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <div id="campaign" class="mt-2" style="height:283px; width:100%;"></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <div id="campaign2" class="mt-2 position-relative" style="height:283px;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- *************************************************************** -->
+<!-- End Sales Charts Section -->
+<!-- *************************************************************** -->
+<!-- *************************************************************** -->
+<!-- Start Location and Earnings Charts Section -->
+<!-- *************************************************************** -->
+<div class="row">
+    <div class="col-md-6 col-lg-8">
+        <div class="card">
+            <div class="card-body">
+                <div id="campaign3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="card">
+            <div id="campaign-pdn"></div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex align-items-center mb-4">
+                    <h4 class="card-title">Pemenang Paket Terbanyak</h4>
+                </div>
+                <div class="table-responsive row">
+                    <div class="col-6">
+                        <h4 class="card-title">Tender</h4>
+                        <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Nama Penyedia</th>
+                            <th>NPWP</th>
+                            <th>Paket</th>
+                            <th>total</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for obj in pemenang %}
+                        <tr>
+                            <td>{{ obj.nama_penyedia }}</td>
+                            <td>{{ obj.npwp_penyedia }}</td>
+                            <td>{{ obj.paket }} Paket</td>
+                            <td>{{ obj.rupiah }}</td>
+                        </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="card-title">Non Tender</h4>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th class="border-0 font-14 font-weight-medium text-muted">Nama Penyedia</th>
+                                <th class="border-0 font-14 font-weight-medium text-muted px-2">NPWP</th>
+                                <th class="border-0 font-14 font-weight-medium text-muted">Paket</th>
+                                <th class="border-0 font-14 font-weight-medium text-muted text-center">total</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                    {% for obj in pemenangNontender %}
+                                <tr>
+                                    <td>{{ obj.nama_penyedia }}</td>
+                                    <td>{{ obj.npwp_penyedia }}</td>
+                                    <td>{{ obj.paket }} Paket</td>
+                                    <td>{{ obj.rupiah }}</td>
+                                </tr>
+                                    {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript">
+    Highcharts.chart('campaign', {
+        chart: {
+            type: 'pie'
+        },
+        title: {
+            text: 'Rekap Jenis Pengadaan'
+        },
+        tooltip: {
+            valueSuffix: ' paket'
+        },
+        subtitle: {
+            text: 'Rekapitulasi jumlah paket Berdasarkan Jenis Pengadaan'
+        },
+        plotOptions: {
+            series: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: [{
+                    enabled: true,
+                    distance: 20
+                }, {
+                    enabled: true,
+                    distance: -40,
+                    format: '{point.percentage:.1f}%',
+                    style: {
+                        fontSize: '1.2em',
+                        textOutline: 'none',
+                        opacity: 0.7
+                    },
+                    filter: {
+                        operator: '>',
+                        property: 'jumlah ',
+                        value: 10
+                    }
+                }]
+            }
+        },
+        series: [
+            {
+                name: 'Percentage',
+                colorByPoint: true,
+                data: [
+                    {% for obj in rekapJenisPengadaan %}
+                    {name: '{{ obj.label }}', y: {{ obj.paket }} },
+                    {% endfor %}
+                ]
+            }
+        ]
+    });
+
+    Highcharts.chart('campaign2', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Rekap Pagu Jenis Pengadaan'
+        },
+        subtitle: {
+            text:'Rekapitulasi Pagu Berdasarkan Jenis Pengadaan'
+        },
+        xAxis: {
+            categories: [
+                {% for obj in rekapJenisPengadaan %}
+                    '{{ obj.label }}',
+                {% endfor %}
+                ],
+            crosshair: true,
+            accessibility: {
+                description: 'Jenis Pengadaan'
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'dalam Juta (Rupiah)'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' (Juta Rupiah)'
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [
+            {
+                name: 'Pagu',
+                data: [
+                    {% for obj in rekapJenisPengadaan %}
+                        Math.floor({{ obj.pagu }} / 1000000),
+                    {% endfor %}
+                  ]
+            },
+        ]
+    });
+
+    const currency = new Intl.NumberFormat('id-ID', {
+        style: 'currency',
+        currency: 'IDR',
+    })
+
+    Highcharts.chart('campaign3', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Rekap Metode Pengadaan'
+        },
+        subtitle: {
+            text: 'Rekapitulasi Paket Berdasarkan Metode Pengadaan'
+        },
+        xAxis: {
+            categories: [
+                {% for obj in rekapMetode %}
+                '{{ obj.metode_pengadaan }}',
+                {% endfor %}
+            ],
+            title: {
+                text: null
+            },
+            gridLineWidth: 1,
+            lineWidth: 0
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Pagu (Juta)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            },
+            gridLineWidth: 0
+        },
+        tooltip: {
+            valueSuffix: ' Juta'
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: '50%',
+                dataLabels: {
+                    enabled: true
+                },
+                groupPadding: 0.1
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor:
+                    Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [
+            {
+                name: 'Paket',
+                data: [
+                    {% for obj in rekapMetode %}
+                        {{ obj.paket }},
+                    {% endfor %}
+                ]
+            }, {
+                name: 'Pagu',
+                data: [
+                    {% for obj in rekapMetode %}
+                        {{ obj.juta }},
+                    {% endfor %}
+                ]
+            }]
+    });
+
+    Highcharts.chart('campaign-pdn', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Alokasi Paket PDN dan UMK {{ tahun }}'
+        },
+        subtitle: {
+            text:
+             'Rekapitulasi Paket PDN Dan UMK Perencanaan'
+        },
+        xAxis: {
+            categories: [
+                {% for obj in rupPdn %}
+                '{{ obj.pdn }}',
+                {% endfor %}
+                {% for obj in rupUmk %}
+                '{{ obj.umk }}',
+                {% endfor %}
+            ],
+            crosshair: true,
+            accessibility: {
+                description: 'Alokasi PDN & UMK'
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'dalam Juta'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' '
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [
+            {
+                name: 'Paket',
+                data: [
+                    {% for obj in rupPdn %}
+                    {{ obj.paket }},
+                    {% endfor %}
+                    {% for obj in rupUmk %}
+                    {{ obj.paket }},
+                    {% endfor %}
+                ]
+            },
+            {
+                name: 'Pagu',
+                data: [
+                    {% for obj in rupPdn %}
+                    {{ obj.pagu }},
+                    {% endfor %}
+                    {% for obj in rupUmk %}
+                    {{ obj.pagu }},
+                    {% endfor %}
+                ]
+            },
+        ]
+    });
+</script>
+{% endblock %}

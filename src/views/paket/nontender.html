@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block title %} Non Tender {% endblock %}
+
+{% block breadcrumb %}
+<h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Non Tender</h3>
+    <div class="d-flex align-items-center">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb m-0 p-0">
+                <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
+                <li class="breadcrumb-item">Non Tender</li>
+            </ol>
+        </nav>
+    </div>
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-3 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="p-2 bg-primary text-center">
+                                <h1 class="font-light text-white">{{ jumlahPaket }}</h1>
+                                <h6 class="text-white">Total Paket</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-3 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="p-2 bg-cyan text-center">
+                                <h1 class="font-light text-white">Rp {{ jumlahPagu }}</h1>
+                                <h6 class="text-white">Total Pagu</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form>
+                    <input type="hidden" name="tahun" value="{{ tahun }}">
+                    <input type="hidden" name="satker" value="{{ satker }}">
+                   <div class="customize-input input-group mb-3">
+                    <label class="input-group-text border-0">Jenis Pengadaan</label>
+                    <select name="jenis" class="select2 form-control custom-radius" onchange="this.form.submit()">
+                        <option {% if jenis is null %} selected {% endif %} value="">Semua</option>
+                       {% for obj in jenisList %}
+                       <option value="{{ obj }}" {% if obj == jenis %} selected {% endif %}>{{ obj }}</option>
+                       {% endfor %}
+                      </select>
+                    <label class="input-group-text border-0">Metode</label>
+                    <select name="metode" class="select2 form-control custom-radius" onchange="this.form.submit()">
+                        <option {% if metode is null %} selected {% endif %} value="">Semua</option>
+                       {% for obj in metodeList %}
+                       <option value="{{ obj }}" {% if obj == metode %} selected {% endif %}>{{ obj }}</option>
+                       {% endfor %}
+                      </select>
+                    <label class="input-group-text border-0">Status</label>
+                     <select name="status" class="select2 form-control custom-radius" onchange="this.form.submit()">
+                        <option {% if status is null %} selected {% endif %} value="">Semua</option>
+                       {% for obj in statusList %}
+                       <option value="{{ obj }}" {% if obj == status %} selected {% endif %}>{{ obj }}</option>
+                       {% endfor %}
+                      </select>
+                  </div>
+                </form>
+                <div class="table-responsive">
+                    <table id="sirupTbl" class="table table-bordered" style="width: 100%;">
+                        <thead>
+                        <tr>
+                            <th width="12%">Kode Paket</th>
+                            <th>Nama Paket</th>
+                            <th width="15%">Metode Pemilihan</th>
+                            <th width="20%">Tanggal Pengumuman</th>
+                            <th width="20%">Satuan Kerja</th>
+                            <th width="5%">Pagu</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+{% include "js-datatable.html" %}
+<script>
+    new DataTable('#sirupTbl', {
+        ajax: '/nontender/data?tahun={{ tahun }}&satker={{ satker }}&jenis={{ jenis }}&metode={{ metode }}&status={{ status }}',
+        scrollX: true,
+        columns: [
+            {data: 'kd_nontender', title: 'Kode Paket', width : '70px'},
+            {data: 'kd_rup', title: 'Kode RUP', width : '70px'},
+            {data: 'nama_paket', title: 'Nama Paket', width : '200px', render: function(data,type,row){
+                    return '<a href="/nontender/' + row['kd_nontender'] + '">'+data+'</a><p><div class="badge text-bg-primary">'
+                    +row["mtd_pemilihan"]+'</div>&nbsp;<div class="badge text-bg-secondary">'+row["jenis_pengadaan"]+'</div></p>';
+                }
+            },
+            {data: 'tanggalPengumuman', title: 'Pengumuman', width : '150px'},
+            {data: 'nama_satker', title : 'Satker', width : '200px', render: function(data,type,row){
+                       return data+'<br /><div class="badge text-bg-primary">'+row["kd_satker_str"]+'</div>';
+                }
+            },
+            {data: 'nip_nama_ppk', title: 'PPK', width : '120px'},
+            {data: 'kualifikasi_paket', title: 'Kualifikasi', width : '120px'},
+            {data: 'kontrak_pembayaran', title: 'Kontrak', width : '120px'},
+            {data: 'lokasi_pekerjaan', title: 'Lokasi Pekerjaan', width : '120px'},
+            {data: 'hpsformat', title: 'HPS', width : '150px'},
+            {data: 'paguformat', title: 'Pagu', width : '150px'},
+            {data: 'status_nontender', title: 'Status', width: '100px'},
+            {data: 'tahun_anggaran', title: 'TA', width : '50px'},
+        ],
+    });
+</script>
+{% endblock %}

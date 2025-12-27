@@ -1,0 +1,139 @@
+{# Left Sidebar - style you can find in sidebar.scss #}
+<aside class="left-sidebar" data-sidebarbg="skin6">
+    {#  Sidebar scroll #}
+    <div class="scroll-sidebar" data-sidebarbg="skin6">
+        {#  Sidebar navigation #}
+        <nav class="sidebar-nav">
+            <ul id="sidebarnav">
+                <li class="sidebar-item">
+                    <a class="sidebar-link sidebar-link" href="/dashboard" aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span class="hide-menu">Dashboard</span></a></li>
+                <li class="list-divider"></li>
+                <li class="nav-small-cap"><span class="hide-menu">Menu</span></li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
+                        <i data-feather="file-text" class="feather-icon"></i><span class="hide-menu">Perencanan</span>
+                    </a>
+                    <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                        <li class="sidebar-item">
+                            <a href="/perencanaan" class="sidebar-link"><span class="hide-menu">Paket Penyedia</span></a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/perencanaan/swakelola" class="sidebar-link"><span class="hide-menu">Paket Swakelola</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
+                        <i data-feather="file-text" class="feather-icon"></i><span class="hide-menu">Detil Paket</span>
+                    </a>
+                    <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                        <li class="sidebar-item">
+                            <a href="/tender" class="sidebar-link"><span class="hide-menu">Tender</span></a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/nontender" class="sidebar-link"><span class="hide-menu">Non Tender</span></a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/pencatatan" class="sidebar-link"><span class="hide-menu">Pencatatan</span></a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/swakelola" class="sidebar-link"><span class="hide-menu">Swakelola</span></a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/katalog" class="sidebar-link"><span class="hide-menu">Katalog</span></a>
+                        </li>
+                    </ul>
+                </li>
+{#                <li class="sidebar-item">#}
+{#                    <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">#}
+{#                        <i data-feather="grid" class="feather-icon"></i><span class="hide-menu">Pemilihan</span>#}
+{#                    </a>#}
+{#                    <ul aria-expanded="false" class="collapse  first-level base-level-line">#}
+{#                        <li class="sidebar-item">#}
+{#                            <a href="/pemilihan/tender" class="sidebar-link"><span class="hide-menu">Tender</span></a>#}
+{#                        </li>#}
+{#                        <li class="sidebar-item">#}
+{#                            <a href="/pemilihan/nontender" class="sidebar-link"><span class="hide-menu">Non Tender</span></a>#}
+{#                        </li>#}
+{#                        <li class="sidebar-item">#}
+{#                            <a href="/pemilihan/pencatatan" class="sidebar-link"><span class="hide-menu">Pencatatan</span></a>#}
+{#                        </li>#}
+{#                        <li class="sidebar-item">#}
+{#                            <a href="/pemilihan/swakelola" class="sidebar-link"><span class="hide-menu">Swakelola</span></a>#}
+{#                        </li>#}
+{#                        <li class="sidebar-item">#}
+{#                            <a href="/pemilihan/katalog" class="sidebar-link"><span class="hide-menu">E-Katalog</span></a>#}
+{#                        </li>#}
+{#                    </ul>#}
+{#                </li>#}
+{#                <li class="sidebar-item">#}
+{#                    <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">#}
+{#                        <i data-feather="grid" class="feather-icon"></i><span class="hide-menu">Kontrak</span>#}
+{#                    </a>#}
+{#                    <ul aria-expanded="false" class="collapse  first-level base-level-line">#}
+{#                        <li class="sidebar-item">#}
+{#                            <a href="/kontrak/tender" class="sidebar-link"><span class="hide-menu">Tender</span></a>#}
+{#                        </li>#}
+{#                        <li class="sidebar-item">#}
+{#                            <a href="/kontrak/nontender" class="sidebar-link"><span class="hide-menu">Non Tender</span></a>#}
+{#                        </li>#}
+{#                        <li class="sidebar-item">#}
+{#                            <a href="/kontrak/pencatatan" class="sidebar-link"><span class="hide-menu">Pencatatan</span></a>#}
+{#                        </li>#}
+{#                        <li class="sidebar-item">#}
+{#                            <a href="/kontrak/swakelola" class="sidebar-link"><span class="hide-menu">Swakelola</span></a>#}
+{#                        </li>#}
+{#                        <li class="sidebar-item">#}
+{#                            <a href="/kontrak/katalog" class="sidebar-link"><span class="hide-menu">E-Katalog</span></a>#}
+{#                        </li>#}
+{#                    </ul>#}
+{#                </li>#}
+{#                <li class="sidebar-item">#}
+{#                    <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">#}
+{#                        <i data-feather="grid" class="feather-icon"></i><span class="hide-menu">Serah Terima</span>#}
+{#                    </a>#}
+{#                    <ul aria-expanded="false" class="collapse  first-level base-level-line">#}
+{#                        <li class="sidebar-item">#}
+{#                            <a href="/serah-terima/tender" class="sidebar-link"><span class="hide-menu">Tender</span></a>#}
+{#                        </li>#}
+{#                        <li class="sidebar-item">#}
+{#                            <a href="/serah-terima/nontender" class="sidebar-link"><span class="hide-menu">Non Tender</span></a>#}
+{#                        </li>#}
+{#                        <li class="sidebar-item">#}
+{#                            <a href="/serah-terima/pencatatan" class="sidebar-link"><span class="hide-menu">Pencatatan</span></a>#}
+{#                        </li>#}
+{#                        <li class="sidebar-item">#}
+{#                            <a href="/serah-terima/swakelola" class="sidebar-link"><span class="hide-menu">Swakelola</span></a>#}
+{#                        </li>#}
+{#                        <li class="sidebar-item">#}
+{#                            <a href="/serah-terima/katalog" class="sidebar-link"><span class="hide-menu">E-Katalog</span></a>#}
+{#                        </li>#}
+{#                    </ul>#}
+{#                </li>#}
+                <li class="sidebar-item">
+                    <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
+                        <i data-feather="grid" class="feather-icon"></i><span class="hide-menu">Pemenang</span>
+                    </a>
+                    <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                        <li class="sidebar-item">
+                            <a href="/pemenang" class="sidebar-link"><span class="hide-menu">Tender</span></a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/pemenang-nontender" class="sidebar-link"><span class="hide-menu">Non Tender</span></a>
+                        </li>
+                    </ul>
+                </li>
+                {% if session.get("role").valueOrNull() == 'ADMIN'  %}
+                <li class="sidebar-item">
+                    <a class="sidebar-link sidebar-link" href="/config" aria-expanded="false">
+                        <i data-feather="grid" class="feather-icon"></i><span class="hide-menu">Service ISB</span>
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </nav>
+        {# End Sidebar navigation #}
+    </div>
+    {# End Sidebar scroll #}
+</aside>
+{# end Left Sidebar #}
