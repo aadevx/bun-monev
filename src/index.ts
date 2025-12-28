@@ -4,7 +4,7 @@ import { Elysia, redirect } from "elysia";
 import { sessionPlugin } from "./sessions";
 import { MemoryStore } from "./sessions/memory"
 import nunjucks from "nunjucks";
-import { LoginController } from "./controllers";
+import { DashboardController, LoginController } from "./controllers";
 
 nunjucks.configure('src/views',{
   autoescape: true,
@@ -27,8 +27,9 @@ const app = new Elysia()
       return LoginController.logout(context);
   })
   .get('/home', (context) => {
-        console.log("sessionid", context.session.get("id"));
-      })
+        console.log("sessionid", context.session.get("userid"));
+    return DashboardController.index(context);
+    })
   .group("/admin", (adminapp) =>
     adminapp.onBeforeHandle((context) => {
         let id = context.session.get("id");

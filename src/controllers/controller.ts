@@ -6,7 +6,7 @@ export abstract class Controller {
      if (param == null)
        param = {}
       Object.assign(param, { session: context.session, request : context.request, error : context.session.get('error') });
-      console.log("param : ", param)
+      // console.log("param : ", param)
       return nunjucks.render(template, param);
    }
 }
